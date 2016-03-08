@@ -5,6 +5,7 @@
  * Randomly picks a map from the mapcycle.
  *
  * SourceMod (C)2004-2014 AlliedModders LLC.  All rights reserved.
+ * Modified 2016 by Ross Bemrose (Powerlord)
  * =============================================================================
  *
  * This program is free software; you can redistribute it and/or modify it under
@@ -36,12 +37,14 @@
 #include "include/read-mapcycle"
 #pragma newdecls required
 
+#define VERSION "1.8"
+
 public Plugin myinfo =
 {
-	name = "RandomCycle",
-	author = "AlliedModders LLC",
-	description = "Randomly chooses the next map.",
-	version = SOURCEMOD_VERSION,
+	name = "RandomCycle with MapCycle/MapGroup",
+	author = "AlliedModders LLC and Powerlord",
+	description = "Randomly chooses the next map using the game's MapCycle/MapGroup",
+	version = VERSION,
 	url = "http://www.sourcemod.net/"
 };
 

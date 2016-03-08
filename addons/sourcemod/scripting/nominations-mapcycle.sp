@@ -1,10 +1,11 @@
 /**
  * vim: set ts=4 :
  * =============================================================================
- * SourceMod Rock The Vote Plugin
- * Creates a map vote when the required number of players have requested one.
+ * SourceMod Nominations with MapCycle Plugin
+ * Allow clients to nominate a map for inclusion in a map vote.
  *
  * SourceMod (C)2004-2014 AlliedModders LLC.  All rights reserved.
+ * Modified 2016 by Ross Bemrose (Powerlord)
  * =============================================================================
  *
  * This program is free software; you can redistribute it and/or modify it under
@@ -37,12 +38,14 @@
 #pragma semicolon 1
 #pragma newdecls required
 
+#define VERSION "1.8"
+
 public Plugin myinfo =
 {
-	name = "Map Nominations",
-	author = "AlliedModders LLC",
-	description = "Provides Map Nominations",
-	version = SOURCEMOD_VERSION,
+	name = "Map Nominations with MapCycle/MapGroup",
+	author = "AlliedModders LLC and Powerlord",
+	description = "Provides Map Nominations using the game's MapCycle/MapGroup",
+	version = VERSION,
 	url = "http://www.sourcemod.net/"
 };
 

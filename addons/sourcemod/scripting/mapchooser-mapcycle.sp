@@ -1,11 +1,12 @@
 /**
  * vim: set ts=4 :
  * =============================================================================
- * SourceMod Mapchooser Plugin
+ * SourceMod Mapchooser using MapCycle Plugin
  * Creates a map vote at appropriate times, setting sm_nextmap to the winning
  * vote
  *
  * SourceMod (C)2004-2014 AlliedModders LLC.  All rights reserved.
+ * Modified 2016 by Ross Bemrose (Powerlord)
  * =============================================================================
  *
  * This program is free software; you can redistribute it and/or modify it under
@@ -43,8 +44,8 @@
 
 public Plugin myinfo =
 {
-	name = "MapChooser MapCycle",
-	author = "Powerlord and AlliedModders LLC",
+	name = "MapChooser with MapCycle/MapGroup",
+	author = "AlliedModders LLC and Powerlord",
 	description = "Automated Map Voting using the game's MapCycle/MapGroup",
 	version = VERSION,
 	url = "http://www.sourcemod.net/"
